@@ -1,0 +1,25 @@
+.brandings {
+  text-align: center;
+  padding: 80px 0;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__content {
+    gap: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__logo {
+    width: 160px;
+    height: 100px;
+    background-color: $gray-300;
+    color: $gray-600;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
