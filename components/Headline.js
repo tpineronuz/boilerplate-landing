@@ -7,28 +7,28 @@ export const Headline = () => {
     <div className='container'>
       <div className='headline'>
         <div className='row justify-content-center'>
-          <div className='col-md-6'>
+          <div className='col-xl-10'>
             <div className='headline__logo'>
               <Image
-                className='animate__animated animate__fadeIn animate__delay-1s	'
+                className='animate__animated animate__fadeIn animate__delay-1s'
                 src={Logo}
                 alt='Loghitec'
-                width='180'
               />
             </div>
             <h1 className='headline__title animate__animated animate__fadeIn animate__delay-2s'>
-              Lorem ipsum dolor sit amet consectetur
+              Líder en Tecnologías para Seguridad
             </h1>
             <div className='headline__subtitle animate__animated animate__fadeIn animate__delay-3s'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              ipsa cumque nam necessitatibus obcaecati beatae iste blanditiis
-              impedit neque provident!
+              Somos distribuidores mayoristas de equipamiento tecnológico para{' '}
+              <b>video vigilancia</b>, <b>sistemas de alarmas</b> y{' '}
+              <b>control de acceso</b> de marcas líderes a nivel mundial, con el
+              mejor precio del mercado.
             </div>
             <a
-              href='#'
-              className='btn btn-light animate__animated animate__fadeIn animate__delay-4s'
+              href='#form'
+              className='btn btn-outline-light btn-lg animate__animated animate__fadeIn animate__delay-4s'
             >
-              Más Información
+              Contactar a un asesor
             </a>
           </div>
         </div>

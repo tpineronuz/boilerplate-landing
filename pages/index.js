@@ -3,6 +3,7 @@ import { Footer } from '../components/Footer';
 import { Form } from '../components/Form';
 import { Header } from '../components/Header';
 import { Headline } from '../components/Headline';
+import { Servicies } from '../components/Servicies';
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
         <Headline />
         <Form />
         <Brandings />
+        <Servicies />
         <Footer />
       </div>
     </>
