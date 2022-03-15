@@ -1,0 +1,51 @@
+.services {
+  // background-color: orange;
+  .card {
+    border: none;
+    background-color: transparent;
+    // background-color: green;
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+    margin-bottom: 60px;
+    &-header {
+      text-align: center;
+      background-color: transparent;
+      // background-color: rgba(red, 0.2);
+      border: none;
+      padding: 0;
+      position: absolute;
+      width: 100%;
+      top: 0;
+    }
+    &-icon {
+      background: rgb(50, 20, 126);
+      background: linear-gradient(
+        45deg,
+        rgba(50, 20, 126, 1) 0%,
+        rgba(231, 20, 56, 1) 100%
+      );
+      color: white;
+      border-radius: 4px;
+      height: 60px;
+      width: 60px;
+      margin: auto;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-body {
+      background-color: #f5f5f5;
+      padding: 80px 30px 50px 30px;
+    }
+    &-title {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    &-text {
+      color: $gray-800;
+    }
+  }
+}
