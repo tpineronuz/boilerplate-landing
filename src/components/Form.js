@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
+import Photo from '@assets/images/image.jpg';
 
 export const Form = () => {
   return (
@@ -8,7 +10,7 @@ export const Form = () => {
           <div className=' col-lg-9 col-xl-8 col-xxl-7'>
             <div className='card'>
               <div className='card-body'>
-                <div className='card-image'></div>
+                <Image src={Photo} className={'card-image'} />
                 <div className='card-form'>
                   <h5 className='mb-3'>Completá con tus datos</h5>
                   <input

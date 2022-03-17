@@ -1,9 +1,10 @@
 .services {
   // background-color: orange;
+  background-color: rgba($gray-100, 1);
+  padding: 80px 0;
   .card {
     border: none;
     background-color: transparent;
-    // background-color: green;
     text-align: center;
     position: relative;
     padding-top: 30px;
@@ -22,7 +23,7 @@
       background: rgb(50, 20, 126);
       background: linear-gradient(
         45deg,
-        rgba(50, 20, 126, 1) 0%,
+        rgba(50, 20, 126, 1) 24%,
         rgba(231, 20, 56, 1) 100%
       );
       color: white;
@@ -36,13 +37,16 @@
       justify-content: center;
     }
     &-body {
-      background-color: #f5f5f5;
+      background-color: rgba($gray-200, 1);
       padding: 80px 30px 50px 30px;
     }
     &-title {
-      font-size: 1.1rem;
+      font-size: 1.14rem;
+      letter-spacing: -0.02rem;
       font-weight: 500;
       margin-bottom: 20px;
+      color: $secondary;
+      text-transform: uppercase;
     }
     &-text {
       color: $gray-800;

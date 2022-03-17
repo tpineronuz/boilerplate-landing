@@ -1,3 +1,4 @@
+import { Cta } from 'components/Cta';
 import { Brandings } from '../components/Brandings';
 import { Footer } from '../components/Footer';
 import { Form } from '../components/Form';
@@ -20,17 +21,13 @@ export default function Home() {
           Mayorista Tecnológico
         </h3>
       </main> */}
-      <div className='header'>
-        <img
-          src='https://images.unsplash.com/photo-1516345079912-c3e011a5a848?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1185&q=80'
-          alt=''
-        />
-      </div>
+      <div className='header'></div>
       <div className='wrapper'>
         <Headline />
         <Form />
-        <Brandings />
         <Servicies />
+        <Brandings />
+        <Cta />
         <Footer />
       </div>
     </>
