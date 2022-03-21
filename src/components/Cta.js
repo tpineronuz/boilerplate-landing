@@ -1,10 +1,26 @@
 import React from 'react';
+import { CtaButton } from './CtaButton';
 
-export const Cta = () => {
+export const Cta = ({
+  ctaTitle = 'Title',
+  ctaSubtitle = 'Subtitle',
+  textBtn = 'Text Button'
+}) => {
   return (
-    <div className='py-5 bg-secondary text-white'>
+    <div className='cta gradient'>
       <div className='container'>
-        <h4>cta</h4>
+        <div className='cta__container'>
+          <div className='cta__content'>
+            <h3>{ctaTitle}</h3>
+            <h4>{ctaSubtitle}</h4>
+          </div>
+          <div className='cta__button'>
+            <CtaButton
+              textBtn={textBtn}
+              classBtn={'btn btn-lg btn-light text-uppercase'}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

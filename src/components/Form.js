@@ -1,8 +1,17 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Photo from '@assets/images/image.jpg';
 
 export const Form = () => {
+  const router = useRouter();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setTimeout(() => {
+      router.push('/gracias');
+    }, 2000);
+  };
   return (
     <div className='container'>
       <div className='form' id='form'>
@@ -11,62 +20,66 @@ export const Form = () => {
             <div className='card'>
               <div className='card-body'>
                 <Image src={Photo} className={'card-image'} />
-                <div className='card-form'>
-                  <h5 className='mb-3'>Completá con tus datos</h5>
-                  <input
-                    type='text'
-                    className='form-control'
-                    placeholder='Nombre'
-                  />
-                  <input
-                    type='text'
-                    className='form-control'
-                    placeholder='Apellido'
-                  />
-                  <input
-                    type='text'
-                    className='form-control'
-                    placeholder='Email'
-                  />
-                  <input
-                    type='text'
-                    className='form-control mb-3'
-                    placeholder='Teléfono'
-                  />
-                  <div className='mb-1 mt-3'>Lorem, ipsum dolor.</div>
-                  <div className='card-checkbox'>
-                    <div className='form-check'>
-                      <input
-                        className='form-check-input'
-                        type='radio'
-                        name='flexRadioDefault'
-                        id='flexRadioDefault1'
-                        defaultChecked={true}
-                      />
-                      <label
-                        className='form-check-label'
-                        htmlFor='flexRadioDefault1'
-                      >
-                        Instalador
-                      </label>
+                <form onSubmit={handleSubmit}>
+                  <div className='card-form'>
+                    <h5 className='mb-4'>Descargá nuestro Catálogo</h5>
+                    <input
+                      type='text'
+                      className='form-control'
+                      placeholder='Nombre'
+                    />
+                    <input
+                      type='text'
+                      className='form-control'
+                      placeholder='Apellido'
+                    />
+                    <input
+                      type='text'
+                      className='form-control'
+                      placeholder='Email'
+                    />
+                    <input
+                      type='text'
+                      className='form-control mb-3'
+                      placeholder='Teléfono'
+                    />
+                    <div className='mb-1 mt-4'>¿A qué te dedicas?</div>
+                    <div className='card-checkbox'>
+                      <div className='form-check'>
+                        <input
+                          className='form-check-input'
+                          type='radio'
+                          name='flexRadioDefault'
+                          id='flexRadioDefault1'
+                          defaultChecked={true}
+                        />
+                        <label
+                          className='form-check-label'
+                          htmlFor='flexRadioDefault1'
+                        >
+                          Instalador
+                        </label>
+                      </div>
+                      <div className='form-check'>
+                        <input
+                          className='form-check-input'
+                          type='radio'
+                          name='flexRadioDefault'
+                          id='flexRadioDefault2'
+                        />
+                        <label
+                          className='form-check-label'
+                          htmlFor='flexRadioDefault2'
+                        >
+                          Empresa
+                        </label>
+                      </div>
                     </div>
-                    <div className='form-check'>
-                      <input
-                        className='form-check-input'
-                        type='radio'
-                        name='flexRadioDefault'
-                        id='flexRadioDefault2'
-                      />
-                      <label
-                        className='form-check-label'
-                        htmlFor='flexRadioDefault2'
-                      >
-                        Empresa
-                      </label>
-                    </div>
+                    <button className='btn btn-primary text-white w-100'>
+                      Enviar
+                    </button>
                   </div>
-                  <button className='btn btn-primary w-100'>Enviar</button>
-                </div>
+                </form>
               </div>
             </div>
           </div>

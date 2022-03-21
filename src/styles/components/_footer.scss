@@ -1,6 +1,14 @@
 footer {
-  padding: 16px 0;
-  // margin-top: 10px;
-  background-color: $primary;
+  background-color: $dark;
   color: white;
+
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+
+  .container {
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
 }
