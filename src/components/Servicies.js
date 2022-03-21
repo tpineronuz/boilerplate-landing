@@ -5,37 +5,37 @@ const services = [
   {
     id: 1,
     icon: 'fa-solid fa-lg fa-video',
-    title: 'Lorem ipsum dolor 1',
+    title: 'Asesoramiento profesional',
     text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, eligendi!s'
   },
   {
     id: 2,
     icon: 'fa-solid fa-lg fa-video',
-    title: 'Lorem ipsum dolor 2',
+    title: 'Precios competitivos',
     text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, eligendi!s'
   },
   {
     id: 3,
     icon: 'fa-solid fa-lg fa-video',
-    title: 'Lorem ipsum dolor 3',
+    title: 'Stock permanente',
     text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, eligendi!s'
   },
   {
     id: 4,
     icon: 'fa-solid fa-lg fa-video',
-    title: 'Lorem ipsum dolor 4',
+    title: 'Envios a todo el país',
     text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, eligendi!s'
   },
   {
     id: 5,
     icon: 'fa-solid fa-lg fa-video',
-    title: 'Lorem ipsum dolor 5',
+    title: 'Garantia oficial de fábrica',
     text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, eligendi!s'
   },
   {
     id: 6,
     icon: 'fa-solid fa-lg fa-video',
-    title: 'Lorem ipsum dolor 6',
+    title: 'Soporte Técnico permanente',
     text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, eligendi!s'
   }
 ];
@@ -45,13 +45,20 @@ export const Servicies = () => {
     <section className='services'>
       <div className='container'>
         <div className='section__header'>
-          <div className='section__header-pretitle'>Lorem ipsum</div>
-          <div className='section__header-title'>
-            Lorem ipsum dolor sit amet
-          </div>
-          <div className='section__header-subtitle'>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus
-            explicabo accusamus minus?
+          <div className='row justify-content-center'>
+            <div className='col-md-9'>
+              <div className='section__header-pretitle'>
+                tecnología & innovación
+              </div>
+              <div className='section__header-title'>
+                Sómos líderes en Tecnologías para Seguridad
+              </div>
+              <div className='section__header-subtitle'>
+                Somos distribuidores mayoristas de equipamiento tecnológico para
+                video vigilancia, sistemas de alarmas y control de acceso de
+                marcas líderes a nivel mundial, con el mejor precio del mercado.
+              </div>
+            </div>
           </div>
         </div>
         <div className='row'>

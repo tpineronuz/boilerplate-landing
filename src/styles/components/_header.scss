@@ -3,12 +3,16 @@
   height: 700px;
   position: absolute;
   top: 0;
-  background: rgb(50, 20, 126);
+  background: rgb(237, 28, 36);
   background: linear-gradient(
     45deg,
-    rgba(50, 20, 126, 1) 0%,
-    rgba(231, 20, 56, 1) 100%
+    rgba(237, 28, 36, 1) 0%,
+    rgba(245, 130, 32, 1) 100%
   );
+
+  &.thanks {
+    height: 180px;
+  }
 
   img {
     width: 100%;
