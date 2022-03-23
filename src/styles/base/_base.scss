@@ -55,7 +55,7 @@ section {
       &-pretitle {
         font-size: 1.1rem;
         text-transform: uppercase;
-        color: $primary;
+        color: $secondary;
       }
       &-title {
         font-size: 2.2rem;
@@ -73,10 +73,10 @@ section {
 }
 
 .gradient {
-  background: rgb(237, 28, 36);
+  background: rgb(230, 20, 80);
   background: linear-gradient(
     45deg,
-    rgba(237, 28, 36, 1) 0%,
-    rgba(245, 130, 32, 1) 100%
+    rgba(230, 20, 80, 1) 0%,
+    rgba(40, 30, 100, 1) 70%
   );
 }

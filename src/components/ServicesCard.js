@@ -4,7 +4,7 @@ export const ServicesCard = ({ service }) => {
   return (
     <div className='card'>
       <div className='card-header'>
-        <div className='card-icon'>
+        <div className='card-icon gradient'>
           <i className={`${service.icon}`}></i>
         </div>
       </div>

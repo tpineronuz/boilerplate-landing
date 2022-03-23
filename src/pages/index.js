@@ -10,7 +10,7 @@ import { Servicies } from '../components/Servicies';
 export default function Home() {
   return (
     <>
-      <div className='header'></div>
+      <div className='header gradient'></div>
       <div className='wrapper'>
         <Logo />
         <Headline />

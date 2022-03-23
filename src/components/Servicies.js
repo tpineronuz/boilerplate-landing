@@ -11,13 +11,13 @@ const services = [
   {
     id: 2,
     icon: 'fa-solid fa-lg fa-video',
-    title: 'Precios competitivos',
+    title: 'Precios directo de fábrica',
     text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, eligendi!s'
   },
   {
     id: 3,
     icon: 'fa-solid fa-lg fa-video',
-    title: 'Stock permanente',
+    title: 'Stock local permanente',
     text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, eligendi!s'
   },
   {
@@ -51,12 +51,13 @@ export const Servicies = () => {
                 tecnología & innovación
               </div>
               <div className='section__header-title'>
-                Sómos líderes en Tecnologías para Seguridad
+                Soluciones tecnológicas aplicadas a la seguridad
               </div>
               <div className='section__header-subtitle'>
-                Somos distribuidores mayoristas de equipamiento tecnológico para
-                video vigilancia, sistemas de alarmas y control de acceso de
-                marcas líderes a nivel mundial, con el mejor precio del mercado.
+                Contamos con un servicio personalizado de acompañamiento para el
+                instalador ó responsables tecnológicos de las compañías y los
+                ayudamos a tomar la mejor desición en la elección de
+                equipamiento de seguridad a adquirir.
               </div>
             </div>
           </div>

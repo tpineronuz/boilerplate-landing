@@ -5,7 +5,7 @@ import { Footer } from '../components/Footer';
 export default function Home() {
   return (
     <>
-      <div className='header thanks'></div>
+      <div className='header gradient thanks'></div>
       <div className='wrapper'>
         <Logo />
         <Thanks />
