@@ -14,7 +14,7 @@ export const Thanks = () => {
             </p>
             <a
               href='/'
-              className='btn btn-lg btn-primary text-white text-uppercase'
+              className='btn btn-lg btn-secondary text-white text-uppercase px-4'
             >
               Descargar Catálogo
             </a>
