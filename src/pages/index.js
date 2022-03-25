@@ -1,6 +1,8 @@
+import { CategoryProduct } from 'components/CategoryProduct';
 import { Cta } from 'components/Cta';
 import { Features } from 'components/Features';
 import { Logo } from 'components/Logo';
+import { Validation } from 'components/Validation';
 import { Brandings } from '../components/Brandings';
 import { Footer } from '../components/Footer';
 import { Form } from '../components/Form';
@@ -23,11 +25,13 @@ export default function Home() {
           textBtn={'Descargar Catálogo!'}
         />
         <Features />
+        <CategoryProduct />
         <Cta
           ctaTitle={'Lorem, ipsum dolor.'}
           ctaSubtitle={'Lorem ipsum dolor sit amet.'}
           textBtn={'Solicitá nuestro Catálogo!'}
         />
+        <Validation />
         <Footer />
       </div>
     </>
