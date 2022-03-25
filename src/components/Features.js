@@ -21,7 +21,16 @@ export const Features = () => {
               </div>
             </div>
           </div>
-          <div className='features__content'>content</div>
+          <div className='features__content'>
+            <ul>
+              <li>Tecnología de primera linea</li>
+              <li>Mesa de ayuda para integradores</li>
+              <li>Demos y webinars de productos</li>
+              <li>Catálogo y notificaiciones de lanzamientos</li>
+              <li>Envios a todo el país</li>
+              <li>Financiación propia a medida</li>
+            </ul>
+          </div>
         </div>
       </section>
     </>
