@@ -15,7 +15,7 @@ export const Features = () => {
                   Somos expertos en sistemas de seguridad
                 </div>
                 <div className='section__header-subtitle'>
-                  Nuestros acuerdos de distribucion te ofrecen ventajas
+                  Nuestros acuerdos de distribución te ofrecen ventajas
                   competitivas unicas.
                 </div>
               </div>

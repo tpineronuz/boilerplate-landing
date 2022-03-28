@@ -16,3 +16,16 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .cta {
+    padding: 80px 0;
+    text-align: center;
+    &__container {
+      flex-direction: column;
+      h4 {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

@@ -1,7 +1,6 @@
 .brandings {
   text-align: center;
   padding: 80px 0;
-  // background-color: blue;
 
   &__title {
     margin-bottom: 30px;
@@ -13,11 +12,11 @@
     justify-content: center;
   }
   &__logo {
-    width: 160px;
+    background-color: white;
+    // box-shadow: 0 0 8px $gray-200;
+    width: 200px;
     height: 100px;
-    background-color: $gray-300;
-    color: $gray-600;
-    font-weight: 500;
+    font-weight: 700;
     padding: 15px;
 
     display: flex;
@@ -42,16 +41,6 @@
       justify-content: center;
     }
     &__logo {
-      width: 160px;
-      height: 100px;
-      background-color: $gray-300;
-      color: $gray-600;
-      font-weight: 700;
-      padding: 15px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
   }
 }
