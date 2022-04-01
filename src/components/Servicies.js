@@ -4,39 +4,33 @@ import { ServicesCard } from './ServicesCard';
 const services = [
   {
     id: 1,
-    icon: 'fa-solid fa-lg fa-video',
-    title: 'Asesoramiento profesional',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, eligendi!s'
+    icon: 'fa-solid fa-2x fa-chalkboard-user',
+    title: 'Asesoramiento especializado a instaladores',
+    text: 'Soporte experto. Más de dos décadas en el rubro seguridad y conectividad al servicio del instalador.'
   },
   {
     id: 2,
-    icon: 'fa-solid fa-lg fa-video',
-    title: 'Precios directo de fábrica',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, eligendi!s'
+    icon: 'fa-solid fa-2x fa-money-bill-1-wave',
+    title: 'Precio oficial a Gremio',
+    text: 'Mediante alianzas estratégicas con distribuidores y fabricantes, llevamos una propuesta exclusiva a integradores.'
   },
   {
     id: 3,
-    icon: 'fa-solid fa-lg fa-video',
+    icon: 'fa-solid fa-2x fa-cube',
     title: 'Stock local permanente',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, eligendi!s'
+    text: 'Materiales para integración de proyectos tecnológicos. Somos distribuidores directos, disponemos de stock inmediato.'
   },
   {
     id: 4,
-    icon: 'fa-solid fa-lg fa-video',
+    icon: 'fa-solid fa-2x fa-dolly',
     title: 'Envios a todo el país',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, eligendi!s'
+    text: 'Contamos con acuerdos con las principales empresas logísticas del país. Priorizamos tu envío.'
   },
   {
     id: 5,
-    icon: 'fa-solid fa-lg fa-video',
+    icon: 'fa-solid fa-2x fa-award',
     title: 'Garantia oficial de fábrica',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, eligendi!s'
-  },
-  {
-    id: 6,
-    icon: 'fa-solid fa-lg fa-video',
-    title: 'Soporte Técnico permanente',
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, eligendi!s'
+    text: 'Nuestros acuerdos oficiales nos permiten extender las condiciones  de garantía de cada fabricante.'
   }
 ];
 
@@ -62,9 +56,9 @@ export const Servicies = () => {
             </div>
           </div>
         </div>
-        <div className='row'>
+        <div className='row justify-content-center'>
           {services.map((service) => (
-            <div key={service.id} className='col-md-4'>
+            <div key={service.id} className='col-md-6 col-lg-5 col-xl-4'>
               <ServicesCard service={service} />
             </div>
           ))}

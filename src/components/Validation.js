@@ -6,7 +6,7 @@ export const Validation = () => {
   return (
     <div className='validation'>
       <div className='container'>
-        <div className='validation__title'>Garantia de confianza</div>
+        <div className='validation__title'>Empresa del grupo</div>
         <div className='validation__content'>
           <div className='validation__logo'>
             <Image src={LogoIntercity} alt='Intercity' />

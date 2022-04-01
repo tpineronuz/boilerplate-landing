@@ -10,7 +10,9 @@ export const Brandings = () => {
   return (
     <div className='brandings'>
       <div className='container'>
-        <Image src={ImageDemo} alt='Imagen formulario' className='mb-5' />
+        <div className='brandings__image'>
+          <Image src={ImageDemo} alt='Imagen formulario' className='' />
+        </div>
         <div className='brandings__title'>Somos distribuidores oficiales</div>
         <div className='brandings__content'>
           <div className='brandings__logo'>

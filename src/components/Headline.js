@@ -7,15 +7,15 @@ export const Headline = () => {
     <div className='container'>
       <div className='headline'>
         <div className='row justify-content-center'>
-          <div className='col-xl-9'>
+          <div className='col-xl-8'>
             <h1 className='headline__title '>
               Líder en tecnologías para seguridad
             </h1>
             <div className='headline__subtitle'>
-              Somos distribuidores mayoristas de equipamientos tecnológico para
-              video vigilancia, sistemas de alarmas y control de acceso,
-              representando a marcas líderes de nivel mundial y con el mejor
-              precio en el mercado.
+              Somos distribuidores mayoristas de equipamiento tecnológico para
+              video vigilancia, sistemas de alarmas, control de acceso y
+              cableado estructurado de marcas líderes a nivel mundial y con el
+              mejor precio en el mercado.
             </div>
             <CtaButton
               textBtn={'Saber más'}

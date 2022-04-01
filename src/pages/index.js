@@ -20,16 +20,18 @@ export default function Home() {
         <Servicies />
         <Brandings />
         <Cta
-          ctaTitle={'Lorem, ipsum dolor.'}
-          ctaSubtitle={'Lorem ipsum dolor sit amet.'}
+          ctaTitle={'¿Sos instalador?'}
+          ctaSubtitle={'Descubrí hoy los beneficios especiales para vos'}
           textBtn={'Descargar Catálogo!'}
         />
         <Features />
         <CategoryProduct />
         <Cta
-          ctaTitle={'Lorem, ipsum dolor.'}
-          ctaSubtitle={'Lorem ipsum dolor sit amet.'}
-          textBtn={'Solicitá nuestro Catálogo!'}
+          ctaTitle={'Precio especial a Gremio'}
+          ctaSubtitle={
+            'Consigue nuestro cátalago y accede a productos exclusivos'
+          }
+          textBtn={'Descargar Catálogo!'}
         />
         <Validation />
         <Footer />

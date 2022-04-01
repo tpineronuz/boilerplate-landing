@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import Photo from '@assets/images/image.jpg';
+import Photo from '@assets/images/image-form.jpg';
 import { useForm } from 'hooks/useForm';
+import addLead from 'services/addLead';
 
 export const Form = () => {
   const router = useRouter();
@@ -15,7 +16,7 @@ export const Form = () => {
     tag: 'instalador'
   };
 
-  const [values, handleInputChange] = useForm(initialForm);
+  const [values, handleInputChange, reset] = useForm(initialForm);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
@@ -33,19 +34,26 @@ export const Form = () => {
     } else {
       setLoading(true);
 
-      // TODO: fetch to webhook
-      setTimeout(() => {
-        router.push('/gracias');
+      //TODO: Capturar fuente y medio de capaña
+
+      addLead(values).then((res) => {
+        console.log(res);
+        if (res.status === 200) {
+          // reset();
+          router.push('/gracias');
+        } else {
+          setError(true);
+        }
         setLoading(false);
-      }, 1000);
+      });
     }
-    console.log(values);
+    //console.log(values);
   };
   return (
     <div className='container'>
       <div className='form' id='form'>
         <div className='row justify-content-center'>
-          <div className=' col-lg-9 col-xl-8 col-xxl-7'>
+          <div className=' col-lg-11 col-xl-10 col-xxl-9'>
             <div className='card'>
               <div className='card-body'>
                 <Image
@@ -68,22 +76,28 @@ export const Form = () => {
                         )}
                       </small>
                     </div>
-                    <input
-                      type='text'
-                      className='form-control'
-                      placeholder='Nombre'
-                      name='fname'
-                      onChange={handleInputChange}
-                      required
-                    />
-                    <input
-                      type='text'
-                      className='form-control'
-                      placeholder='Apellido'
-                      name='lname'
-                      onChange={handleInputChange}
-                      required
-                    />
+                    <div className='row'>
+                      <div className='col-md-6'>
+                        <input
+                          type='text'
+                          className='form-control'
+                          placeholder='Nombre'
+                          name='fname'
+                          onChange={handleInputChange}
+                          required
+                        />
+                      </div>
+                      <div className='col-md-6'>
+                        <input
+                          type='text'
+                          className='form-control'
+                          placeholder='Apellido'
+                          name='lname'
+                          onChange={handleInputChange}
+                          required
+                        />
+                      </div>
+                    </div>
                     <input
                       type='email'
                       className='form-control'
@@ -94,13 +108,13 @@ export const Form = () => {
                     />
                     <input
                       type='text'
-                      className='form-control mb-3'
+                      className='form-control'
                       placeholder='Teléfono'
                       name='phone'
                       onChange={handleInputChange}
                       required
                     />
-                    <div className='mb-1 mt-4'>¿A qué te dedicas?</div>
+                    <div className='mb-1'>¿A qué te dedicas?</div>
                     <div className='card-checkbox'>
                       <div className='form-check'>
                         <input

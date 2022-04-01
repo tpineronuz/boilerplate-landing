@@ -16,18 +16,18 @@ export const Features = () => {
                 </div>
                 <div className='section__header-subtitle'>
                   Nuestros acuerdos de distribución te ofrecen ventajas
-                  competitivas unicas.
+                  competitivas unicas
                 </div>
               </div>
             </div>
           </div>
           <div className='features__content'>
             <ul>
-              <li>Tecnología de primera linea</li>
+              <li>Tecnología de primera línea</li>
               <li>Mesa de ayuda para integradores</li>
               <li>Demos y webinars de productos</li>
-              <li>Catálogo y notificaiciones de lanzamientos</li>
-              <li>Envios a todo el país</li>
+              <li>Catálogo y notificaciones de lanzamientos</li>
+              <li>Envíos a todo el país</li>
               <li>Financiación propia a medida</li>
             </ul>
           </div>

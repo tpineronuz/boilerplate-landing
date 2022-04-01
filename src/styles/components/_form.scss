@@ -10,12 +10,13 @@
     .card-body {
       padding: 0;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 56% 44%;
     }
     .card-image {
       border-radius: 4px 0 0 4px;
       width: 100%;
       object-fit: cover;
+      object-position: right;
     }
     .card-form {
       padding: 30px;
@@ -38,6 +39,16 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .form {
+    .card {
+      .card-body {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .form {
     margin-bottom: 40px;
@@ -51,10 +62,10 @@
         display: block;
       }
       .card-form {
-        padding: 30px;
+        padding: 15px;
       }
       .form-control {
-        margin-bottom: 16px;
+        margin-bottom: 12px;
       }
     }
   }
