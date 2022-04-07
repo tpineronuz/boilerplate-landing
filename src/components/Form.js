@@ -31,13 +31,10 @@ export const Form = () => {
     } else {
       setLoading(true);
 
-      //TODO: Capturar fuente y medio de capaña
-
       addLead(values).then((res) => {
         console.log(res);
         if (res.status === 200) {
           window.dataLayer = window.dataLayer || [];
-          s;
           window.dataLayer.push({
             event: 'custom.gtm.submittedForm',
             category: 'goals',
