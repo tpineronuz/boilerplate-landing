@@ -8,7 +8,7 @@ import addLead from 'services/addLead';
 export const Form = () => {
   const router = useRouter();
 
-  const initialForm = {
+  const initialValues = {
     fname: '',
     lname: '',
     email: '',
@@ -16,20 +16,17 @@ export const Form = () => {
     tag: 'instalador'
   };
 
-  const [values, handleInputChange, reset] = useForm(initialForm);
+  const [values, handleInputChange, reset] = useForm(initialValues);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+
+  const { fname, lname, email, phone, tag } = values;
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setError(false);
 
-    if (
-      values.fname == '' ||
-      values.lname == '' ||
-      values.email == '' ||
-      values.phone == ''
-    ) {
+    if (fname == '' || lname == '' || email == '' || phone == '') {
       setError(true);
     } else {
       setLoading(true);
@@ -39,13 +36,32 @@ export const Form = () => {
       addLead(values).then((res) => {
         console.log(res);
         if (res.status === 200) {
-          // reset();
+          window.dataLayer = window.dataLayer || [];
+          s;
+          window.dataLayer.push({
+            event: 'custom.gtm.submittedForm',
+            category: 'goals',
+            label: 'mainForm'
+          });
           router.push('/gracias');
         } else {
           setError(true);
         }
+        reset();
         setLoading(false);
       });
+
+      // window.dataLayer = window.dataLayer || [];s
+      // window.dataLayer.push({
+      //   event: 'custom.gtm.submittedForm',
+      //   category: 'goals',
+      //   label: 'mainForm'
+      // });
+
+      // setTimeout(() => {
+      //   setLoading(false);
+      //   reset();
+      // }, 1000);
     }
     //console.log(values);
   };
@@ -83,6 +99,7 @@ export const Form = () => {
                           className='form-control'
                           placeholder='Nombre'
                           name='fname'
+                          value={fname}
                           onChange={handleInputChange}
                           required
                         />
@@ -93,6 +110,7 @@ export const Form = () => {
                           className='form-control'
                           placeholder='Apellido'
                           name='lname'
+                          value={lname}
                           onChange={handleInputChange}
                           required
                         />
@@ -103,6 +121,7 @@ export const Form = () => {
                       className='form-control'
                       placeholder='Email'
                       name='email'
+                      value={email}
                       onChange={handleInputChange}
                       required
                     />
@@ -111,6 +130,7 @@ export const Form = () => {
                       className='form-control'
                       placeholder='Teléfono'
                       name='phone'
+                      value={phone}
                       onChange={handleInputChange}
                       required
                     />
@@ -123,7 +143,7 @@ export const Form = () => {
                           name='tag'
                           id='tag1'
                           value='instalador'
-                          checked={values.tag == 'instalador' ? true : false}
+                          checked={tag == 'instalador' ? true : false}
                           onChange={handleInputChange}
                         />
                         <label className='form-check-label' htmlFor='tag1'>
@@ -137,7 +157,7 @@ export const Form = () => {
                           name='tag'
                           id='tag2'
                           value='empresa'
-                          checked={values.tag == 'empresa' ? true : false}
+                          checked={tag == 'empresa' ? true : false}
                           onChange={handleInputChange}
                         />
                         <label className='form-check-label' htmlFor='tag2'>

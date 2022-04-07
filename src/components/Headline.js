@@ -14,12 +14,12 @@ export const Headline = () => {
             <div className='headline__subtitle'>
               Somos distribuidores mayoristas de equipamiento tecnológico para
               video vigilancia, sistemas de alarmas, control de acceso y
-              cableado estructurado de marcas líderes a nivel mundial y con el
-              mejor precio en el mercado.
+              cableado estructurado de marcas líderes a nivel mundial.
             </div>
             <CtaButton
               textBtn={'Saber más'}
               classBtn={'btn btn-outline-light btn-lg'}
+              id={'btn-cta-headline'}
             />
           </div>
         </div>

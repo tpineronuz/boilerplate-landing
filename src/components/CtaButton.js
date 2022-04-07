@@ -12,7 +12,7 @@ export const CtaButton = ({
     });
   };
   return (
-    <button onClick={handleClick} className={classBtn}>
+    <button onClick={handleClick} className={classBtn} id={'btn-cta-banners'}>
       {textBtn}
     </button>
   );
