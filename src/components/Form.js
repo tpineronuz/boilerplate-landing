@@ -7,6 +7,7 @@ import addLead from 'services/addLead';
 
 export const Form = () => {
   const router = useRouter();
+  // console.log(router);
 
   const initialValues = {
     fname: '',
@@ -31,8 +32,18 @@ export const Form = () => {
     } else {
       setLoading(true);
 
+      if (router.query.utm_campaign) {
+        values.utm_campaign = router.query.utm_campaign;
+      }
+      if (router.query.utm_medium) {
+        values.utm_medium = router.query.utm_medium;
+      }
+      if (router.query.utm_source) {
+        values.utm_source = router.query.utm_source;
+      }
+
       addLead(values).then((res) => {
-        console.log(res);
+        // console.log(res);
         if (res.status === 200) {
           window.dataLayer = window.dataLayer || [];
           window.dataLayer.push({
@@ -48,7 +59,9 @@ export const Form = () => {
         setLoading(false);
       });
 
-      // window.dataLayer = window.dataLayer || [];s
+      // console.log(values);
+
+      // window.dataLayer = window.dataLayer || [];
       // window.dataLayer.push({
       //   event: 'custom.gtm.submittedForm',
       //   category: 'goals',
@@ -57,7 +70,7 @@ export const Form = () => {
 
       // setTimeout(() => {
       //   setLoading(false);
-      //   reset();
+      //   // reset();
       // }, 1000);
     }
     //console.log(values);
