@@ -5,6 +5,10 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        <meta
+          name='facebook-domain-verification'
+          content='thkh8186fe5aj3djvywlnurdet4gxx'
+        />
         <link
           rel='stylesheet'
           href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
